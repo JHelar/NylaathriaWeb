@@ -1,0 +1,32 @@
+@media all and (max-width: 969px) {
+  #menu {
+    border: none; }
+    #menu > ul {
+      display: none; }
+
+  .menuitem {
+    flex: 1 100%;
+    margin-top: 1rem;
+    border: none; }
+
+  .menu-button {
+    display: block; }
+
+  main {
+    margin-top: 0;
+    border: none; }
+
+  .left-column {
+    flex: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    order: 2; }
+    .left-column .box {
+      flex: 1 20%;
+      margin-left: 1rem;
+      border-bottom-left-radius: 10px; } }
+@media all and (min-width: 970px) {
+  #menu > ul {
+    display: flex !important; } }
+
+/*# sourceMappingURL=media.css.map */

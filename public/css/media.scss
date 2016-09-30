@@ -1,0 +1,46 @@
+$primary-color: #8fbbcb;
+$border-curve: 10px;
+$border-big-curve: 30px;
+
+$font-big: 2rem;
+$font-medium: 1.5rem;
+$font-normal: 1rem;
+
+@media all and (max-width: 969px){
+  #menu {
+    border: none;
+    > ul {
+      display: none;
+    }
+  }
+  .menuitem {
+    flex: 1 100%;
+    margin-top:1rem;
+    border: none;
+  }
+  .menu-button{
+    display: block;
+  }
+  main {
+    margin-top: 0;
+    border: none;
+  }
+  .left-column {
+    flex: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    order:2;
+    .box {
+      flex: 1 20%;
+      margin-left:1rem;
+
+      border-bottom-left-radius: $border-curve;
+    }
+  }
+}
+
+@media all and (min-width: 970px){
+  #menu > ul{
+    display: flex !important;
+  }
+}

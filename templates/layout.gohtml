@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{block "title" .}}Nylaathria v3.0{{end}}</title>
+        <link href="public/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="public/css/styles.css" type="text/css" rel="stylesheet" >
+        <link href="public/css/main.css" type="text/css" rel="stylesheet" >
+        <link href="public/css/media.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="public/js/main.js"></script>
+
+    </head>
+    <body class="container">
+        <header class="main-header">
+            <section class="main-hero">
+                <span class="nylaathria-loggo"></span>
+                <button id="main-menu-button" tabindex="0" aria-controls="menu" class="menu-button bordered">MENU</button>
+            </section>
+            <nav id="menu" class="main-menu bordered">
+                {{block "navigation" .}}
+                <ul>
+                    <li class="menuitem"><a href="#">News</a></li>
+                    <li class="menuitem"><a href="#">Forum</a></li>
+                    <li class="menuitem"><a href="#">Raid Planner</a></li>
+                    <li class="menuitem"><a href="#">Gallery</a></li>
+                    <li class="menuitem"><a href="#">Video</a></li>
+                    <li class="menuitem"><a href="#">Recruitment</a></li>
+                </ul>
+                {{end}}
+            </nav>
+        </header>
+        <main>
+            {{block "maincontent" .}}
+
+
+            {{end}}
+        </main>
+        <footer>
+
+        </footer>
+        <div class="border-wrapper">
+        </div>
+    </body>
+</html>

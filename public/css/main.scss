@@ -1,0 +1,122 @@
+/*Variables*/
+$primary-color: #8fbbcb;
+$border-curve: 10px;
+$border-big-curve: 30px;
+
+$font-big: 2rem;
+$font-medium: 1.5rem;
+$font-normal: 1rem;
+
+html {
+  background: transparent url("/public/imgs/bktrees.jpg") no-repeat center center;
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+body {
+
+  background-color: transparent;
+
+}
+body * {
+  font-family: 'PT Sans Caption', sans-serif !important;
+}
+/*General*/
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.bordered {
+  border: 2px solid $primary-color;
+}
+.border-wrapper{
+  border: 60px solid transparent;
+  -webkit-border-image: url("/public/imgs/borders.png") 130 round;
+  -moz-border-image: url("/public/imgs/borders.png") 130 round;
+  -o-border-image: url("/public/imgs/borders.png") 130 round;
+  border-image: url("/public/imgs/borders.png") 130 round;
+}
+/*Header*/
+.main-hero {
+  .nylaathria-loggo{
+    background: transparent url("/public/imgs/nylrglogo1.png") no-repeat center center;
+    opacity: .8;
+  }
+}
+.menu-button {
+  font-size: $font-big;
+  color: $primary-color;
+  background-color:transparent;
+  border-top-left-radius: $border-curve;
+  border-bottom-right-radius: $border-curve;
+}
+.main-menu {
+  -webkit-border-radius: $border-big-curve;
+  -moz-border-radius: $border-big-curve;
+  border-radius: $border-big-curve;
+
+}
+.menuitem {
+  > a,
+  > a:visited,
+  > a:active,
+  > a:link,
+  > a:focus{
+    color: $primary-color;
+    font-weight: 300;
+    font-size: $font-big;
+    text-decoration: none;
+
+    transition: color .2s ease-in-out;
+  }
+  > a::before{
+    background: transparent url("/public/imgs/menuitemhover.png") no-repeat center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+}
+.menuitem:first-child{
+  border-left: 3px solid $primary-color;
+  border-radius: $border-big-curve;
+}
+.menuitem:last-child{
+  border-right: 3px solid $primary-color;
+  border-radius: $border-big-curve;
+}
+
+.menuitem:hover > a,
+.menuitem.active > a{
+  color: white;
+}
+.menuitem:hover > a::before,
+.menuitem.active > a::before {
+  opacity: 1;
+}
+
+/*Main content*/
+
+.box {
+  border-bottom-right-radius: $border-curve;
+  color: white;
+  >.header{
+    font-size:$font-medium;
+    color:$primary-color;
+    text-align: center;
+
+  }
+  strong {
+    font-weight: bold;
+  }
+  i {
+    font-style: italic;
+  }
+}
+.progress-list-wrapper{
+  .header{
+    font-weight:bold;
+    text-decoration: underline;
+
+  }
+}
